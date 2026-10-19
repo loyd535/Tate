@@ -1817,9 +1817,9 @@ class _NotesScreenState extends State<NotesScreen> {
       context: context,
       builder: (ctx) => AlertDialog(
         title: Text(l.deleteForever),
-        content: Text(l.arabic ? 'لا يمكن التراجع عن الحذف النهائي.' : 'This cannot be undone.'),
+        content: Text(l.ar ? 'لا يمكن التراجع عن الحذف النهائي.' : 'This cannot be undone.'),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(ctx, false), child: Text(l.arabic ? 'إلغاء' : 'Cancel')),
+          TextButton(onPressed: () => Navigator.pop(ctx, false), child: Text(l.ar ? 'إلغاء' : 'Cancel')),
           FilledButton(onPressed: () => Navigator.pop(ctx, true), child: Text(l.deleteForever)),
         ],
       ),
