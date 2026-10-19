@@ -1,16 +1,23 @@
-name: ote
-
-description: تطبيق مذكرة ذكي ومنظم وقابل للتوسعة.
+name: tete
+description: TETE — مساحتك الشخصية الهادية في الفضاء
 publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.17.0 <4.0.0'
+  sdk: '>=3.2.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  shared_preferences: ^2.2.2
+  provider: ^6.1.2
+  shared_preferences: ^2.2.3
+  google_fonts: 6.1.0
+  intl: '>=0.19.0 <1.0.0'
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
 
 flutter:
   uses-material-design: true
